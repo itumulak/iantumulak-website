@@ -5,6 +5,7 @@
 :root {
   --bg-opaque: hsla(0,0%,7%,.25);
   --brand: #0aff9d;
+  --text: #ebecf3;
 }
 
 html {

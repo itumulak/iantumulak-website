@@ -4,6 +4,10 @@ export default {
 	  "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    colors: {
+        'brand': '#0aff9d',
+        'base': '#ebecf3',
+    },
     extend: {},
   },
   plugins: [],

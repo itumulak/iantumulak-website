@@ -16,7 +16,7 @@ export default ({ data }) => {
                     target="_blank" 
                     rel="noreferrer" 
                     key={social.name}
-                    className="w-6 h-6"
+                    className="w-6 h-6 cursor-pointer"
                 >
                     {social.icon}
                 </Social>
