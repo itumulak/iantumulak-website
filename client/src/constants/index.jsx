@@ -1,3 +1,25 @@
+import { IoLogoJavascript } from "react-icons/io5";
+import { IoLogoReact } from "react-icons/io5";
+import { IoLogoNodejs } from "react-icons/io5";
+import { BiLogoMongodb } from "react-icons/bi";
+import { IoLogoFirebase } from "react-icons/io5";
+import { BiLogoTailwindCss } from "react-icons/bi";
+import { IoLogoWordpress } from "react-icons/io5";
+import { SiPhp } from "react-icons/si";
+import { IoLogoHtml5 } from "react-icons/io5";
+import { IoLogoCss3 } from "react-icons/io5";
+import { SiMysql } from "react-icons/si";
+import { SiFlutter } from "react-icons/si";
+import { SiSanity } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
+import { SiComposer } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
+import { SiDart } from "react-icons/si";
+import { IoLogoSass } from "react-icons/io5";
+import { TbBrandFramerMotion } from "react-icons/tb";
+import { TbBrandRedux } from "react-icons/tb";
+import { RiNpmjsFill } from "react-icons/ri";
+
 import linkedin from "../assets/linkedin.svg"
 import github from "../assets/github.svg"
 
@@ -34,5 +56,104 @@ export const menuItems = [
     {
         name: "Resume",
         url: "#"
+    }
+]
+
+export const languageStack = [
+    {
+        name: "JavaScript",
+        icon: <IoLogoJavascript size={20} />
+    },
+    {
+        name: "PHP",
+        icon: <SiPhp size={20} />
+    },
+    {
+        name: "HTML",
+        icon: <IoLogoHtml5 size={20} />
+    },
+    {
+        name: "CSS",   
+        icon: <IoLogoCss3 size={20} />     
+    },
+    {
+        name: "Dart",
+        icon: <SiDart size={20} />
+    }
+]
+
+export const libraryStack = [
+    {
+        name: "React",
+        icon: <IoLogoReact size={20} />
+    },
+    {
+        name: "Flutter",
+        icon: <SiFlutter size={20} />
+    },
+    {
+        name: "Node.js",
+        icon: <IoLogoNodejs size={20} />
+    },
+    {
+        name: "Tailwind CSS",
+        icon: <BiLogoTailwindCss size={20} />
+    },
+    {
+        name: "Framer Motion",
+        icon: <TbBrandFramerMotion size={20} />
+    },
+    {
+        name: "Redux",
+        icon: <TbBrandRedux size={20} />
+    },
+    {
+        name: "Sass",   
+        icon: <IoLogoSass size={20} />
+    }
+]
+
+export const databaseStack = [
+    {
+        name: "MySQL",
+        icon: <SiMysql size={20} />
+    },
+    {
+        name: "MongoDB",
+        icon: <BiLogoMongodb size={20} />
+    },
+    {
+        name: "Firebase",
+        icon: <IoLogoFirebase size={20} />
+    },
+]
+
+export const cmsStack = [
+    {
+        name: "Wordpress",
+        icon: <IoLogoWordpress size={20} />
+    },
+    {
+        name: "Sanity",
+        icon: <SiSanity size={20} />
+    }
+]
+
+export const toolStack = [
+    {
+        name: "VS Code",
+        icon: <VscVscode size={20} />
+    },
+    {
+        name: "Git",
+        icon: <FaGitAlt size={20} />
+    },
+    {
+        name: "NPM",
+        icon: <RiNpmjsFill size={20} />
+    },
+    {
+        name: "Composer",
+        icon: <SiComposer size={20} />
     }
 ]
