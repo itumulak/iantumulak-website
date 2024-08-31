@@ -29,7 +29,7 @@ import upworkImg from "../assets/upwork.jpg";
 import firekampImg from "../assets/firekamp.jpg";
 import thecodecoImg from "../assets/thecodeco.jpg";
 import trybpoImg from "../assets/trybpo.jpg";
-import Home from "../pages/Home/Home";
+import pdfFile from "../assets/resume.pdf";
 
 export const socials = [
     { 
@@ -71,8 +71,9 @@ export const menuItems = [
         url: "/#contact"
     },
     {
+        id: "resume",
         name: "Resume",
-        url: "#"
+        url: pdfFile
     }
 ]
 

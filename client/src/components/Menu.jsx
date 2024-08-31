@@ -13,9 +13,9 @@ export default () => {
         }
     }
 
-    const scrollToTop = () => {
-        console.log("top")  ;
-        
+    const scrollToTop = (e) => {
+        e.preventDefault()       
+
         window.scrollTo({
             top: 0,
             behavior: 'smooth' // Smooth scrolling
@@ -47,7 +47,7 @@ export default () => {
                         show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeInOut" } },
                     }}
                 >
-                    <a onClick={(e) => item.id === 'home' ? scrollToTop() : scrollToSection(e, item.id)} className={`text-base font-medium ${item.name === "Resume" ? "text-brand border-brand border-2 rounded py-2 px-4" : ""}`} href={item.url}>{item.name}</a>
+                    <a target={item.id === "resume" ? "_blank" : ""} onClick={(e) => item.id === 'home' ? scrollToTop(e) : item.id !== 'resume' ? scrollToSection(e, item.id) : null} className={`text-base font-medium ${item.name === "Resume" ? "text-brand border-brand border-2 rounded py-2 px-4" : ""}`} href={item.url}>{item.name}</a>
                 </motion.li>
             ))}
         </motion.ul>
