@@ -180,7 +180,7 @@ export const toolStack = [
 export const projects = [
     {
         name: "Twitter-like app",
-        summary: "This is a MERN stack project completely functional from the sign in, sign up, to the creation, edit, and deletion of post. This showcase my full-stack capability. This showcase my full stack capabilities to handle both frontend and backend work.",
+        summary: "This is a MERN stack project completely functional from the sign in, sign up, to the creation, edit, and deletion of post. This showcase my full stack development capabilities.",
         links: [
             {
                 type: "website",
@@ -334,7 +334,7 @@ export const experience  = [
         position: "Frontend Developer",
         started: "Feb 2021",
         ended: "Oct 2021",
-        description: "I worked as a front developer, converting Figma/XD designs into WordPress themes. My work involves working with Gutenberg, ACF Blocks, mobile responsiveness, speed optimization, and handling data migration from Drupal to WordPress.",
+        description: "I worked as a front developer, converting Figma/XD designs into WordPress themes. My responsibility involves working with Gutenberg blocks, ACF Blocks, mobile responsiveness, speed optimization, and data migration from Drupal to WordPress.",
         logo: thecodecoImg
     },
     {

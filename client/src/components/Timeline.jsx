@@ -1,7 +1,6 @@
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { IoGlobe } from "react-icons/io5";
-import { FaSchool } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
 
 import { experience } from "../constants";
