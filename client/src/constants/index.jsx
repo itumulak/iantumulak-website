@@ -29,6 +29,7 @@ import upworkImg from "../assets/upwork.jpg";
 import firekampImg from "../assets/firekamp.jpg";
 import thecodecoImg from "../assets/thecodeco.jpg";
 import trybpoImg from "../assets/trybpo.jpg";
+import Home from "../pages/Home/Home";
 
 export const socials = [
     { 
@@ -45,18 +46,27 @@ export const socials = [
 
 export const menuItems = [
     {
+        id: "home",
         name: "Home",
-        url: "#"
+        url: "/#home"
     },
     {
+        id: "about",
         name: "About",
         url: "/#about"
     },
     {
+        id: "projects",
         name: "Projects",
         url: "/#projects"
     },
     {
+        id: "experience",
+        name: "Experience",
+        url: "/#experience"
+    },
+    {
+        id: "contact",
         name: "Contact",
         url: "/#contact"
     },
@@ -318,7 +328,7 @@ export const experience  = [
         position: "WordPress Contractor",
         started: "Apr 2010",
         ended: "Jul 2024",
-        description: "As an Upwork contractor, over the years I have taken odds jobs and long-term projects throughout the duration of my career as a contractor in the platform. The work spans from quick fixes, small-scale work, to the large-scale enterprise projects. In Upwork, I marketed myself as a WordPress specialist who handles both no-code development and web development.",
+        description: "I have taken odds jobs and long-term WordPress projects throughout the duration of my stay in the platform. The work spans from quick fixes, small-scale work, to the large-scale enterprise projects. I have built my whole career in UpWork. Sadly, I have to walk away from this platform since it is now overrun with bot applicants, fake job posts, and predatorial fees.",
         logo: upworkImg
     },
     {
@@ -326,7 +336,7 @@ export const experience  = [
         position: "Web Engineer",
         started: "Oct 2020",
         ended: "Dec 2023",
-        description: "I am engaged in diverse projects spanning WordPress, Shopify, Kajabi, and React applications. My primary responsibility is frontend development, with occasional involvement in no-code development.",
+        description: "I am engaged in diverse projects spanning WordPress, Shopify, Kajabi, and React applications. My primary responsibility is frontend development, with occasional involvement in the backend.",
         logo: firekampImg
     },
     {
@@ -342,7 +352,7 @@ export const experience  = [
         position: "Junior Web Developer",
         started: "Sep 2012",
         ended: "Aug 2011",
-        description: "I work as a junior web developer for the company. As a junior level, my obligation was to familiarize myself with Soholaunch, Joomla, and WordPress. I was also tasked with web design. After leaving the company, I opted to specialize as a WordPress developer. NOTE: This company is no longer operating.",
+        description: "I work as a junior web developer for the company. As a junior level, my obligation was to familiarize myself with Soholaunch, Joomla, and WordPress. I was also given small roles in web design. After leaving the company, I opted to specialize as a WordPress developer and pursued my career in freelancing. NOTE: This company is no longer operating.",
         logo: ""
     },
     {

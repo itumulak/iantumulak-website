@@ -22,7 +22,7 @@ const Projects = styled.div`
 
 export default () => {
     return (
-        <Section>
+        <Section id="projects">
             <Headline text={`Projects`} isRight={true} />
             <Projects>
                 {projects.map((project, index) => (

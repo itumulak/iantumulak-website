@@ -6,7 +6,7 @@ import Sidebar from "./Sidebar";
 
 export default () => {
     return (
-        <Section>
+        <Section id="about">
             <Headline text={`About me`}/>
             <div className="flex flex-col gap-y-6">
                 <Container>

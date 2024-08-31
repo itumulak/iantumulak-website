@@ -4,7 +4,7 @@ import Timeline from "../../components/Timeline"
 
 export default () => {
     return (
-        <Section>
+        <Section id="experience">
             <Headline text={`Experience`}/>
             <Timeline/>
         </Section>
