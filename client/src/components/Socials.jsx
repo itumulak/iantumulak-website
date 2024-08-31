@@ -33,6 +33,7 @@ export default ({ data }) => {
                         initial: { opacity: 0, y: -75 },
                         show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeInOut" } },
                     }}
+                    whileHover={{ scale: 1.2 }}
                 >
                     <Social 
                         href={social.url} 

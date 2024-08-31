@@ -1,6 +1,7 @@
 import { IoLogoGithub } from "react-icons/io5";
 import { IoGlobe } from "react-icons/io5";
 import { styled } from "styled-components";
+import { motion } from "framer-motion";
 
 import Headline from "./Headline"
 import imgPlaceholder from "../assets/project-placeholder.jpg"
@@ -29,16 +30,17 @@ export default ({src, name, summary, links = [], stacks = []}) => {
                 <Headline text={name} size="1.2rem" weight="bold" gap={3}/>
                 <div className="flex flex-row gap-3">
                     {links.map((link, index) => (
-                        <a 
+                        <motion.a 
                             href={link.url} 
                             target="_blank" 
                             rel="noreferrer" 
                             key={index}
-                            className="hover:text-brand"    
+                            className="hover:text-brand"   
+                            whileHover={{ scale: 1.2 }} 
                         >
                             {link.type === "website" && <IoGlobe size={28} />}
                             {link.type === "github" && <IoLogoGithub size={28} />}
-                        </a>
+                        </motion.a>
                     ))}
                 </div>
             </div>
