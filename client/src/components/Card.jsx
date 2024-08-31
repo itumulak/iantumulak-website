@@ -4,6 +4,7 @@ import { styled } from "styled-components";
 
 import Headline from "./Headline"
 import imgPlaceholder from "../assets/project-placeholder.jpg"
+import Reveal from "./Reveal";
 
 const Img = styled.img`
     position: absolute;
@@ -41,13 +42,17 @@ export default ({src, name, summary, links = [], stacks = []}) => {
                     ))}
                 </div>
             </div>
-            <div className="flex flex-row gap-3">
-                Stack
-                {stacks.map((stack, index) => (
-                    <span key={index} title={stack.name} className="text-brand">{stack.icon}</span>
-                ))}
-            </div>
-            <div>{summary}</div>
+            <Reveal>
+                <div className="flex flex-row gap-3">                
+                    Stack
+                    {stacks.map((stack, index) => (
+                        <span key={index} title={stack.name} className="text-brand">{stack.icon}</span>
+                    ))}
+                </div>
+            </Reveal>                    
+            <Reveal width="auto">
+                <div>{summary}</div> 
+            </Reveal>
         </div>
     )
 }

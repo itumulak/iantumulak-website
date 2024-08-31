@@ -4,6 +4,7 @@ import { IoGlobe } from "react-icons/io5";
 import { FaStar } from "react-icons/fa";
 
 import { experience } from "../constants";
+import Reveal from "./Reveal";
 
 export default () => {
     return (
@@ -16,10 +17,18 @@ export default () => {
                     iconStyle={{overflow: "hidden", backgroundColor: "#282c34"}}
                     icon={exp.logo ? <img src={exp.logo} alt={exp.company}/> : <IoGlobe size={40}/>}
                 >
-                    <h3 className="text-light-dark font-bold">{exp.company}</h3>
-                    <h4 className="text-light-dark font-medium">{exp.position}</h4>
+                    <Reveal>
+                        <h3 className="text-light-dark font-bold">{exp.company}</h3>
+                    </Reveal>
+                    <Reveal>
+                        <h4 className="text-light-dark font-medium">{exp.position}</h4>
+                    </Reveal>
+                    <Reveal>
                     <h5 className="text-light-dark font-light">{`${exp.started} - ${exp.ended}`}</h5>
-                    <p className="text-light-dark !font-light">{exp.description}</p>
+                    </Reveal>
+                    <Reveal>
+                        <p className="text-light-dark !font-light">{exp.description}</p>
+                    </Reveal>
                 </VerticalTimelineElement>
             ))}
             <VerticalTimelineElement
