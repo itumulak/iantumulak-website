@@ -25,6 +25,11 @@ import { SiExpress } from "react-icons/si";
 import { SiAxios } from "react-icons/si";
 import { IoLogoDocker } from "react-icons/io5";
 
+import upworkImg from "../assets/upwork.jpg";
+import firekampImg from "../assets/firekamp.jpg";
+import thecodecoImg from "../assets/thecodeco.jpg";
+import trybpoImg from "../assets/trybpo.jpg";
+
 export const socials = [
     { 
         name: "LinkedIn", 
@@ -183,8 +188,7 @@ export const projects = [
             },
             {
                 type: "github",
-                url: "https://github.com/itumulak/memories-mern-stack",
-                icon: <IoLogoGithub size={28} />    
+                url: "https://github.com/itumulak/memories-mern-stack"   
             }
         ],
         stacks: [
@@ -306,4 +310,47 @@ export const projects = [
             }
         ]
     },    
+]
+
+export const experience  = [
+    {
+        company: "Upwork",
+        position: "WordPress Contractor",
+        started: "Apr 2010",
+        ended: "Jul 2024",
+        description: "As an Upwork contractor, over the years I have taken odds jobs and long-term projects throughout the duration of my career as a contractor in the platform. The work spans from quick fixes, small-scale work, to the large-scale enterprise projects. In Upwork, I marketed myself as a WordPress specialist who handles both no-code development and web development.",
+        logo: upworkImg
+    },
+    {
+        company: "FireKamp",
+        position: "Web Engineer",
+        started: "Oct 2020",
+        ended: "Dec 2023",
+        description: "I am engaged in diverse projects spanning WordPress, Shopify, Kajabi, and React applications. My primary responsibility is frontend development, with occasional involvement in no-code development.",
+        logo: firekampImg
+    },
+    {
+        company: "The Code Co.",
+        position: "Frontend Developer",
+        started: "Feb 2021",
+        ended: "Oct 2021",
+        description: "I worked as a front developer, converting Figma/XD designs into WordPress themes. My work involves working with Gutenberg, ACF Blocks, mobile responsiveness, speed optimization, and handling data migration from Drupal to WordPress.",
+        logo: thecodecoImg
+    },
+    {
+        company: "IDX Web Designs",
+        position: "Junior Web Developer",
+        started: "Sep 2012",
+        ended: "Aug 2011",
+        description: "I work as a junior web developer for the company. As a junior level, my obligation was to familiarize myself with Soholaunch, Joomla, and WordPress. I was also tasked with web design. After leaving the company, I opted to specialize as a WordPress developer. NOTE: This company is no longer operating.",
+        logo: ""
+    },
+    {
+        company: "Try BPO Outsourcing Solutions",
+        position: "SEO Specialist, Part-time web developer",
+        started: "Jun 2009",
+        ended: "Aug 2010",
+        description: "I work as their virtual assistant SEO specialist from their parent company, eLocal.com. During my tenure as an employee, I was given a web development project. This outcome resulted in pivoting my career as a web developer. NOTE: This company pivots into empireflippers.com.",
+        logo: trybpoImg
+    }
 ]
