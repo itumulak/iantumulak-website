@@ -6,16 +6,20 @@ import { projects } from "../../constants"
 
 const Projects = styled.div`
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr;
     gap: 2rem;
 
-    & > div {
-        &:nth-child(odd) {
-            grid-column: 1;
-        }
+    @media (min-width: 768px) {
+        grid-template-columns: 50% 50%;
 
-        &:nth-child(even) {
-            grid-column: 2;
+        & > div {
+            &:nth-child(odd) {
+                grid-column: 1;
+            }
+
+            &:nth-child(even) {
+                grid-column: 2;
+            }
         }
     }
 `

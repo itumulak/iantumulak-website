@@ -20,7 +20,7 @@ export default () => {
     return (
         <div className="flex flex-col gap-y-4">
             <SubHeadline icon={<TerminalIcon />} text={`Tech Stack`}/>
-            <div className="flex flex-row gap-8 justify-between">
+            <div className="flex flex-col lg:flex-row gap-8 justify-between">
                 <Tags tags={languageStack} label={`Languages`} icon={<IoCodeSlashSharp/>}/>
                 <Tags tags={libraryStack} label={`Libraries`} icon={<SiBookstack/>}/>
                 <Tags tags={databaseStack} label={`Database`} icon={<FaDatabase/>}/>
