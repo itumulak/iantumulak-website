@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
 
 import { menuItems } from "../constants";
 
@@ -26,11 +27,29 @@ export default () => {
         });
     }
 
+    const handleShowMobileMenu = () => {
+        setShowMenu(!showMenu);
+    }
+
     return (
         <>
-            <button className="lg:hidden">
+            <button className="lg:hidden" onClick={handleShowMobileMenu}>
                 <GiHamburgerMenu size={28}/>
             </button>
+            {showMenu &&
+            <ul className="absolute top-0 right-0 w-[50%] bg-[#22252b] h-svh flex flex-col gap-3 pl-8 pt-4">
+                <li className="self-end pr-8">
+                    <button onClick={handleShowMobileMenu}>
+                        <IoClose size={28}/>
+                    </button>
+                </li>
+                {menuItems.map(item => (
+                    <li key={item.name} className={item.id === "resume" ? "mt-4" : ""}>
+                        <a  target={item.id === "resume" ? "_blank" : ""} onClick={(e) => item.id === 'home' ? scrollToTop(e) : item.id !== 'resume' ? scrollToSection(e, item.id) : null} className={`text-base font-medium ${item.name === "Resume" ? "text-brand border-brand border-2 rounded py-2 px-4" : ""}`} href={item.url}>{item.name}</a>
+                    </li>
+                ))}
+            </ul>
+            }
             <motion.ul 
                 className="hidden lg:flex flex-row gap-x-6"
                 variants={{
