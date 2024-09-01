@@ -326,42 +326,127 @@ export const projects = [
 export const experience  = [
     {
         company: "Upwork",
+        url: "https://www.upwork.com/freelancers/~015f9c0c1d82983486",
         position: "WordPress Contractor",
         started: "Apr 2010",
         ended: "Jul 2024",
         description: "I have taken odds jobs and long-term WordPress projects throughout the duration of my stay in the platform. The work spans from quick fixes, small-scale work, to the large-scale enterprise projects. I have built my whole career in UpWork. Sadly, I have to walk away from this platform since it is now overrun with bot applicants, fake job posts, and predatorial fees.",
-        logo: upworkImg
+        logo: upworkImg,
+        work: [
+            {
+                name: "99banners",
+                url: "https://99banners.com/"
+            },
+            {
+                name: "Talk to walle",
+                url: "https://talktowalle.com/"
+            },
+            {
+                name: "Volt Edge",
+                url: "https://www.voltedge.com.au/"
+            },
+            {
+                name: "Wake-up World",
+                url: "https://wakeupworld.com/"
+            },
+            {
+                name: "in8sync",
+                url: "https://in8sync.com/"
+            },            
+            {
+                name: "HSC Coworks",
+                url: "https://hsccoworks.com.au/"
+            },
+            {
+                name: "Arrow Root Media",
+                url: "https://arrowrootmedia.com/"
+            },
+            {
+                name: "Distressed Pro",
+                url: "https://www.distressedpro.com/"
+            },
+            {
+                name: "The web craftsmen",
+                url: "https://thewebcraftsmen.com/"
+            },
+            {
+                name: "ND5 Media LLC",
+                url: "https://www.linkedin.com/company/nd5-media-llc/"
+            },
+            {
+                name: "Mosier Data",
+                url: "https://mosierdata.com/"
+            }
+        ],
     },
     {
         company: "FireKamp",
+        url: "https://www.firekamp.com/",
         position: "Web Engineer",
         started: "Oct 2020",
         ended: "Dec 2023",
         description: "I am engaged in diverse projects spanning WordPress, Shopify, Kajabi, and React applications. My primary responsibility is frontend development, with occasional involvement in the backend.",
-        logo: firekampImg
+        logo: firekampImg,
+        work: [
+            {
+                name: "Network Chuck",
+                url: "https://networkchuck.com/"
+            },
+            {
+                name: "Network Chuck Academy",
+                url: "https://academy.networkchuck.com/"
+            },
+            {
+                name: "Weco Hosipitality",
+                url: "https://wecohospitality.com/"
+            }
+        ]
     },
     {
         company: "The Code Co.",
+        url: "https://thecode.co/",
         position: "Frontend Developer",
         started: "Feb 2021",
         ended: "Oct 2021",
         description: "I worked as a front developer, converting Figma/XD designs into WordPress themes. My responsibility involves working with Gutenberg blocks, ACF Blocks, mobile responsiveness, speed optimization, and data migration from Drupal to WordPress.",
-        logo: thecodecoImg
+        logo: thecodecoImg,
+        work: [
+            {
+                name: "Her Campus",
+                url: "https://hercampus.com/"
+            },
+            {
+                name: "Games Hub",
+                url: "https://gameshub.com/"
+            },
+            {
+                name: "One Mile at a time",
+                url: "https://onemileatatime.com/"
+            }
+        ]
     },
     {
         company: "IDX Web Designs",
+        url: "",
         position: "Junior Web Developer",
         started: "Sep 2012",
         ended: "Aug 2011",
         description: "I work as a junior web developer for the company. As a junior level, my obligation was to familiarize myself with Soholaunch, Joomla, and WordPress. I was also given small roles in web design. After leaving the company, I opted to specialize as a WordPress developer and pursued my career in freelancing. NOTE: This company is no longer operating.",
-        logo: ""
+        logo: "",
+        work: [
+            {
+                name: "Carolina web consultants",
+                url: "https://internetpeople.net/"
+            }
+        ]
     },
     {
         company: "Try BPO Outsourcing Solutions",
+        url: "",
         position: "SEO Specialist, Part-time web developer",
         started: "Jun 2009",
         ended: "Aug 2010",
-        description: "I work as their virtual assistant SEO specialist from their parent company, eLocal.com. During my tenure as an employee, I was given a web development project. This outcome resulted in pivoting my career as a web developer. NOTE: This company pivots into empireflippers.com.",
+        description: "I work as their virtual assistant SEO specialist from their parent company, eLocal.com. During my tenure as an employee, I was given a web development project. This oppurtunity resulted in shifting my career as a web developer. NOTE: This company pivots into empireflippers.com.",
         logo: trybpoImg
     }
 ]
