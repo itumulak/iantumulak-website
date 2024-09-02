@@ -30,6 +30,8 @@ import firekampImg from "../assets/firekamp.jpg";
 import thecodecoImg from "../assets/thecodeco.jpg";
 import trybpoImg from "../assets/trybpo.jpg";
 import pdfFile from "../assets/resume.pdf";
+import mernstackImg from "../assets/mern-stack.jpg";
+import firebaseAuthImg from "../assets/firebase-auth.png";
 
 export const socials = [
     { 
@@ -231,7 +233,9 @@ export const projects = [
                 name: "Tailwind CSS",
                 icon: <BiLogoTailwindCss size={20} />
             }
-        ]
+        ],
+        video: "https://www.youtube.com/embed/stAdJjquk2Q?si=rLRElQSsp7zmXfBY",
+        src: mernstackImg
     },
     {
         name: "Single Sign-on with Firebase",
@@ -275,7 +279,8 @@ export const projects = [
                 name: "React",   
                 icon: <IoLogoReact size={20} />
             }
-        ]
+        ],
+        src: firebaseAuthImg
     },
     {
         name: "Sanity Flutter Demo",

@@ -9,7 +9,7 @@ const Projects = styled.div`
     grid-template-columns: 1fr;
     gap: 2rem;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
         grid-template-columns: 50% 50%;
 
         & > div {

@@ -31,25 +31,61 @@ export default () => {
         setShowMenu(!showMenu);
     }
 
+    const handleMobileMenuClose = (e, id) => {
+        e.preventDefault()
+
+        if ( id === 'home' ) {
+            scrollToTop(e)
+        }
+        else if ( id !== "resume" ) {
+            scrollToSection(e, id)
+        }
+
+        setShowMenu(!showMenu);
+    }
+
+    const mobileMenuStyles = {
+        '@media (minWidth: 1024px)': {
+          display: "none"
+        },
+    };
+
     return (
         <>
             <button className="lg:hidden" onClick={handleShowMobileMenu}>
                 <GiHamburgerMenu size={28}/>
             </button>
-            {showMenu &&
-            <ul className="absolute top-0 right-0 w-[50%] bg-[#22252b] h-svh flex flex-col gap-3 pl-8 pt-4">
-                <li className="self-end pr-8">
+            <motion.ul 
+                className="absolute top-0 right-0 w-[50%] bg-[#22252b] h-svh flex flex-col gap-3 pl-8 pt-4 "
+                variants={{
+                    hide: {
+                        display: "none",    
+                        x: 400, 
+                        opacity: 0
+                    },
+                    show: {
+                        x: 0,
+                        display: "flex",
+                        opacity: 1,
+                        transition: {
+                            duration: 0.3,
+                            ease: "easeInOut"
+                        }
+                    }
+                }}
+                animate={showMenu ? "show" : "hide"}
+            >
+                <li key="close" className="self-end pr-8">
                     <button onClick={handleShowMobileMenu}>
                         <IoClose size={28}/>
                     </button>
                 </li>
                 {menuItems.map(item => (
                     <li key={item.name} className={item.id === "resume" ? "mt-4" : ""}>
-                        <a  target={item.id === "resume" ? "_blank" : ""} onClick={(e) => item.id === 'home' ? scrollToTop(e) : item.id !== 'resume' ? scrollToSection(e, item.id) : null} className={`text-base font-medium ${item.name === "Resume" ? "text-brand border-brand border-2 rounded py-2 px-4" : ""}`} href={item.url}>{item.name}</a>
+                        <a  target={item.id === "resume" ? "_blank" : ""} onClick={(e) => handleMobileMenuClose(e, item.id)} className={`text-base font-medium ${item.name === "Resume" ? "text-brand border-brand border-2 rounded py-2 px-4" : ""}`} href={item.url}>{item.name}</a>
                     </li>
                 ))}
-            </ul>
-            }
+            </motion.ul>
             <motion.ul 
                 className="hidden lg:flex flex-row gap-x-6"
                 variants={{

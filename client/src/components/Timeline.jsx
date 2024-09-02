@@ -38,13 +38,11 @@ export default () => {
                                 </Reveal>
                                 <div className="flex flex-row flex-wrap gap-y-2 gap-x-3">                                    
                                     {exp.work.map((work) => (
-                                        <Reveal>
-                                            <Pill
-                                                key={work.name}
-                                                name={work.name}
-                                                url={work.url}
-                                            />
-                                        </Reveal>
+                                        <Pill
+                                            key={work.name}
+                                            name={work.name}
+                                            url={work.url}
+                                        />
                                     ))}
                                 </div>
                             </div>
