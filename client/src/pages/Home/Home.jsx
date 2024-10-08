@@ -11,7 +11,7 @@ export default () => {
             <AboutSection/>
             <ProjectsSection/>
             <ExperienceSection/>
-            <ContactSection email={"edden87@gmail.com"} linkedin={"https://www.linkedin.com/in/itumulak/"} />
+            <ContactSection email={"ianctumulak@gmail.com"} linkedin={"https://www.linkedin.com/in/itumulak/"} />
         </>
     )
 }

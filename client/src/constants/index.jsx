@@ -24,6 +24,7 @@ import { IoLogoGithub } from "react-icons/io5";
 import { SiExpress } from "react-icons/si";
 import { SiAxios } from "react-icons/si";
 import { IoLogoDocker } from "react-icons/io5";
+import { SiNextdotjs } from "react-icons/si";
 
 import upworkImg from "../assets/upwork.jpg";
 import firekampImg from "../assets/firekamp.jpg";
@@ -32,6 +33,8 @@ import trybpoImg from "../assets/trybpo.jpg";
 import pdfFile from "../assets/resume.pdf";
 import mernstackImg from "../assets/mern-stack.jpg";
 import firebaseAuthImg from "../assets/firebase-auth.png";
+import dockerImg from "../assets/docker.png";
+import ecommerceImg from '../assets/ecommerce.png';
 
 export const socials = [
     { 
@@ -192,6 +195,38 @@ export const toolStack = [
 
 export const projects = [
     {
+        name: "Enterprise E-commerce app",
+        summary: "A Next.js e-commerce app that utilize multiple microservices. Sanity for storing product info, Firebase for sign-in/sign-up, Stripe for payments, and MongoDB for storing orders. This showcase my capability to integrate third party services to an app.",
+        links:[],
+        stacks: [
+            {
+                name: "Next.js",
+                icon: <SiNextdotjs  size={20} />
+            },
+            {
+                name: "React",
+                icon: <IoLogoReact size={20} />
+            },
+            {
+                name: "Firebase",
+                icon: <IoLogoFirebase size={20} />
+            },
+            {
+                name: "Redux",
+                icon: <TbBrandRedux size={20} />
+            },
+            {
+                name: "MongoDB",
+                icon: <BiLogoMongodb size={20} />
+            },
+            {
+                name: "Sanity",
+                icon: <SiSanity size={20} />
+            },
+        ],
+        src: ecommerceImg
+    },
+    {
         name: "Twitter-like app",
         summary: "This is a MERN stack project completely functional from the sign in, sign up, to the creation, edit, and deletion of post. This showcase my full stack development capabilities.",
         links: [
@@ -232,7 +267,11 @@ export const projects = [
             {
                 name: "Tailwind CSS",
                 icon: <BiLogoTailwindCss size={20} />
-            }
+            },
+            {
+                name: "Firebase",
+                icon: <IoLogoFirebase size={20} />
+            },
         ],
         video: "https://www.youtube.com/embed/stAdJjquk2Q?si=rLRElQSsp7zmXfBY",
         src: mernstackImg
@@ -282,30 +321,30 @@ export const projects = [
         ],
         src: firebaseAuthImg
     },
-    {
-        name: "Sanity Flutter Demo",
-        summary: "This is a demo that utilized Sanity's sample movie dataset and then built the mobile app with Dart/Flutter.",
-        links: [
-            {
-                type: "github",
-                url: "https://github.com/itumulak/sanity-flutter-demo",
-            },
-        ],
-        stacks: [
-            {
-                name: "Flutter",
-                icon: <SiFlutter size={20} />
-            },
-            {
-                name: "Dart",
-                icon: <SiDart size={20} />
-            },
-            {
-                name: "Sanity",
-                icon: <SiSanity size={20} />
-            }
-        ]
-    },
+    // {
+    //     name: "Sanity Flutter Demo",
+    //     summary: "This is a demo that utilized Sanity's sample movie dataset and then built the mobile app with Dart/Flutter.",
+    //     links: [
+    //         {
+    //             type: "github",
+    //             url: "https://github.com/itumulak/sanity-flutter-demo",
+    //         },
+    //     ],
+    //     stacks: [
+    //         {
+    //             name: "Flutter",
+    //             icon: <SiFlutter size={20} />
+    //         },
+    //         {
+    //             name: "Dart",
+    //             icon: <SiDart size={20} />
+    //         },
+    //         {
+    //             name: "Sanity",
+    //             icon: <SiSanity size={20} />
+    //         }
+    //     ]
+    // },
     {
         name: "WordPress Instance with Docker",
         summary: "This is a template starter for WordPress projects with Docker compose. Let's you spin up WordPress, MySQL, and PHPMyAdmin. Traefik serves as a middleware for url proxy.",
@@ -324,7 +363,8 @@ export const projects = [
                 name: "Docker",
                 icon: <IoLogoDocker size={20} />
             }
-        ]
+        ],
+        src: dockerImg
     },    
 ]
 
