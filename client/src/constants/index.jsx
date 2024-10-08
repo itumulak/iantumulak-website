@@ -25,6 +25,8 @@ import { SiExpress } from "react-icons/si";
 import { SiAxios } from "react-icons/si";
 import { IoLogoDocker } from "react-icons/io5";
 import { SiNextdotjs } from "react-icons/si";
+import { FaCcStripe } from "react-icons/fa";
+import { SiTraefikproxy } from "react-icons/si";
 
 import upworkImg from "../assets/upwork.jpg";
 import firekampImg from "../assets/firekamp.jpg";
@@ -141,6 +143,10 @@ export const libraryStack = [
     {
         name: "Sass",   
         icon: <IoLogoSass size={20} />
+    },
+    {
+        name: "Stripe",
+        icon: <FaCcStripe size={20} />
     }
 ]
 
@@ -190,12 +196,16 @@ export const toolStack = [
     {
         name: "Composer",
         icon: <SiComposer size={20} />
+    },
+    {
+        name: "Traefik Proxy",
+        icon: <SiTraefikproxy size={20} />
     }
 ]
 
 export const projects = [
     {
-        name: "Enterprise E-commerce app",
+        name: "E-commerce app",
         summary: "A Next.js e-commerce app that utilize multiple microservices. Sanity for storing product info, Firebase for sign-in/sign-up, Stripe for payments, and MongoDB for storing orders. This showcase my capability to integrate third party services to an app.",
         links:[],
         stacks: [
@@ -208,13 +218,13 @@ export const projects = [
                 icon: <IoLogoReact size={20} />
             },
             {
-                name: "Firebase",
-                icon: <IoLogoFirebase size={20} />
-            },
-            {
                 name: "Redux",
                 icon: <TbBrandRedux size={20} />
             },
+            {
+                name: "Firebase",
+                icon: <IoLogoFirebase size={20} />
+            },            
             {
                 name: "MongoDB",
                 icon: <BiLogoMongodb size={20} />
@@ -223,6 +233,10 @@ export const projects = [
                 name: "Sanity",
                 icon: <SiSanity size={20} />
             },
+            {
+                name: "Stripe",
+                icon: <FaCcStripe size={20} />
+            }
         ],
         src: ecommerceImg
     },
@@ -230,6 +244,10 @@ export const projects = [
         name: "Twitter-like app",
         summary: "This is a MERN stack project completely functional from the sign in, sign up, to the creation, edit, and deletion of post. This showcase my full stack development capabilities.",
         links: [
+            {
+                type: "video",
+                url: "https://www.youtube.com/watch?v=ZxWwvVYl6Cw"
+            },
             {
                 type: "website",
                 url: "https://itumulak-mern-stack.vercel.app/"
@@ -268,12 +286,7 @@ export const projects = [
                 name: "Tailwind CSS",
                 icon: <BiLogoTailwindCss size={20} />
             },
-            {
-                name: "Firebase",
-                icon: <IoLogoFirebase size={20} />
-            },
         ],
-        video: "https://www.youtube.com/embed/stAdJjquk2Q?si=rLRElQSsp7zmXfBY",
         src: mernstackImg
     },
     {
@@ -362,6 +375,10 @@ export const projects = [
             {
                 name: "Docker",
                 icon: <IoLogoDocker size={20} />
+            },
+            {
+                name: "Traefik",
+                icon: <SiTraefikproxy size={20} />
             }
         ],
         src: dockerImg

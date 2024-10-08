@@ -36,22 +36,7 @@ export default ({src, name, summary, video = "" , links = [], stacks = []}) => {
                 <Img 
                     src={src ? src : imgPlaceholder} 
                     alt="project"
-                />
-                {video && 
-                <>
-                    <motion.div 
-                        className="absolute top-[60%] left-1/2 translate-x-[-50%] translate-y-[-50%] cursor-pointer"
-                        variants={{
-                            hidePlayer: {opacity: 0, y: 100, x: -40},
-                            showPlayer: {opacity: 1, y: -40, transition: {duration: 0.2, ease: "easeInOut"}},
-                        }}
-                    >
-                        <IoIosPlayCircle size={80} color="black" />
-                    </motion.div>
-                    <Modal open={showModal} handleClose={setShowModal} videoUrl={video} />
-                </>
-                }
-                
+                />              
             </motion.div>
             <div className="flex flex-row flex-nowrap items-center justify-between gap-3">
                 <Headline text={name} sizes={{xs: "14px", md: "19px"}} weight="bold" gap={3}/>
@@ -67,6 +52,7 @@ export default ({src, name, summary, video = "" , links = [], stacks = []}) => {
                         >
                             {link.type === "website" && <IoGlobe size={28} />}
                             {link.type === "github" && <IoLogoGithub size={28} />}
+                            {link.type === "video" && <IoIosPlayCircle size={28} />}
                         </motion.a>
                     ))}
                 </div>
