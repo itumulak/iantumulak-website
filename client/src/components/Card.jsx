@@ -8,7 +8,6 @@ import { useState } from "react";
 import Headline from "./Headline"
 import imgPlaceholder from "../assets/project-placeholder.jpg"
 import Reveal from "./Reveal";
-import Modal from "./Modal";
 
 const Img = styled.img`
     transition: all .25s;
