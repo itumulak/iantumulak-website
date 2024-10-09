@@ -1,5 +1,3 @@
-import { CiMail } from "react-icons/ci";
-
 import Container from "../../components/Container"
 import Headline from "../../components/Headline"
 import Reveal from "../../components/Reveal";
