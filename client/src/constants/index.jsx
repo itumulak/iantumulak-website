@@ -206,7 +206,7 @@ export const toolStack = [
 export const projects = [
     {
         name: "E-commerce app",
-        summary: "A Next.js e-commerce app that utilize multiple microservices. Sanity for storing product info, Firebase for sign-in/sign-up, Stripe for payments, and MongoDB for storing orders. This showcase my capability to integrate third party services to an app.",
+        summary: "A Next.js e-commerce app that utilize multiple microservices. Sanity for storing product info, Firebase for sign-in/sign-up, Stripe for payments, and MongoDB for storing orders. This app combines multiple services to provide a coherent e-commerce experience.",
         links:[
             {
                 type: "github",
