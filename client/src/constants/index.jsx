@@ -209,6 +209,10 @@ export const projects = [
         summary: "A Next.js e-commerce app that utilize multiple microservices. Sanity for storing product info, Firebase for sign-in/sign-up, Stripe for payments, and MongoDB for storing orders. This app combines multiple services to provide a coherent e-commerce experience.",
         links:[
             {
+                type: "website",
+                url: "https://itumulak-ecommerce.vercel.app/"
+            },
+            {
                 type: "github",
                 url: "https://github.com/itumulak/ecommerce-project"   
             }
