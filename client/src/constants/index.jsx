@@ -251,7 +251,7 @@ export const projects = [
         links: [
             {
                 type: "video",
-                url: "https://www.youtube.com/watch?v=ZxWwvVYl6Cw"
+                url: "https://youtu.be/stAdJjquk2Q?si=fGz8Y4XoZsI3Z_kh"
             },
             {
                 type: "website",

@@ -3,7 +3,6 @@ import { IoGlobe } from "react-icons/io5";
 import { IoIosPlayCircle } from "react-icons/io";
 import { styled } from "styled-components";
 import { motion } from "framer-motion";
-import { useState } from "react";
 
 import Headline from "./Headline"
 import imgPlaceholder from "../assets/project-placeholder.jpg"
@@ -17,26 +16,18 @@ const Img = styled.img`
     margin: auto;
 `
 
-export default ({src, name, summary, video = "" , links = [], stacks = []}) => {
-    const [showModal, setShowModal] = useState(false);
-
-    const handleModal = () => {
-        setShowModal(!showModal);
-    }
+export default ({src, name, summary, links = [], stacks = []}) => {
 
     return (
-        <div className="flex flex-col flex-nowrap gap-4">
-            <motion.div 
-                className={`w-full pt-16 aspect-video bg-light-dark relative rounded-lg overflow-hidden ${video ? "cursor-pointer" : ""}`}
-                initial="hidePlayer"
-                whileHover="showPlayer"
-                onClick={handleModal}
+        <div className="flex flex-col flex-nowrap gap-4 max-w-[432px]">
+            <div 
+                className={`w-full pt-16 aspect-video bg-light-dark relative rounded-lg overflow-hidden`}
             >
                 <Img 
                     src={src ? src : imgPlaceholder} 
                     alt="project"
                 />              
-            </motion.div>
+            </div>
             <div className="flex flex-row flex-nowrap items-center justify-between gap-3">
                 <Headline text={name} sizes={{xs: "14px", md: "19px"}} weight="bold" gap={3}/>
                 <div className="flex flex-row gap-3">
