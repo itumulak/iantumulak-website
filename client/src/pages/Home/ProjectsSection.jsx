@@ -27,7 +27,7 @@ const Projects = styled.div`
 export default () => {
     return (
         <Section id="projects">
-            <Headline text={`Projects`} isRight={true} />
+            <Headline text={`Passion Projects`} isRight={true} />
             <Projects>
                 {projects.map((project, index) => (
                     <Card key={index} {...project} />
