@@ -454,7 +454,7 @@ export const experience  = [
         company: "FireKamp",
         url: "https://www.firekamp.com/",
         position: "Web Engineer",
-        started: "Oct 2020",
+        started: "Oct 2022",
         ended: "Dec 2023",
         description: "I am engaged in diverse projects spanning WordPress, Shopify, Kajabi, and React applications. My primary responsibility is frontend development, with occasional involvement in the backend.",
         logo: firekampImg,
