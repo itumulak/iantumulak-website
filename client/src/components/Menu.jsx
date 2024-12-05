@@ -5,7 +5,7 @@ import { IoClose } from "react-icons/io5";
 
 import { menuItems } from "../constants";
 
-export default () => {
+const Menu = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     const scrollToSection = (e, id) => {
@@ -43,12 +43,6 @@ export default () => {
 
         setShowMenu(!showMenu);
     }
-
-    const mobileMenuStyles = {
-        '@media (minWidth: 1024px)': {
-          display: "none"
-        },
-    };
 
     return (
         <>
@@ -118,3 +112,5 @@ export default () => {
         </>
     )
 }
+
+export default Menu

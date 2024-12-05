@@ -1,6 +1,7 @@
 import { Box, Modal } from "@mui/material";
+import PropTypes from "prop-types";
 
-export default ({open, handleClose, videoUrl}) => {
+const ModalVideo = ({open, handleClose, videoUrl}) => {
     return (
         <Modal
             open={open}
@@ -31,3 +32,11 @@ export default ({open, handleClose, videoUrl}) => {
         </Modal>
     )
 }
+
+ModalVideo.propTypes = {
+    open: PropTypes.bool,
+    handleClose: PropTypes.func,
+    videoUrl: PropTypes.string,
+}
+
+export default ModalVideo

@@ -9,7 +9,7 @@ const Header = styled.header`
     backdrop-filter: blur(12px);
 `
 
-export default () => {
+const LayoutHeader = () => {
     return (
         <Header className="flex items-center justify-between sticky top-0 z-20 px-9 h-16">
             <Socials data={socials}/>
@@ -17,3 +17,5 @@ export default () => {
         </Header>
     )
 }
+
+export default LayoutHeader

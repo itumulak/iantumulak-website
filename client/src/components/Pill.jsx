@@ -1,6 +1,7 @@
+import PropTypes from "prop-types"
 import Reveal from "./Reveal"
 
-export default ({name, url}) => {
+const Pill = ({name, url}) => {
     return (
         <Reveal>
             <a 
@@ -15,3 +16,10 @@ export default ({name, url}) => {
         </Reveal>
     )
 }
+
+Pill.propTypes = {
+    name: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+}
+
+export default Pill

@@ -1,6 +1,7 @@
+import PropTypes from "prop-types"
 import Reveal from "./Reveal"
 
-export default ({icon, text}) => {
+const SubHeadline = ({icon, text}) => {
     return (
         <Reveal> 
             <div className="flex flex-row items-center gap-3">
@@ -9,3 +10,10 @@ export default ({icon, text}) => {
         </Reveal>
     )
 }
+
+SubHeadline.propTypes = {
+    icon: PropTypes.node,
+    text: PropTypes.string
+}
+
+export default SubHeadline

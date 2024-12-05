@@ -1,6 +1,7 @@
+import PropTypes from "prop-types"
 import Reveal from "./Reveal"
 
-export default ({tags, icon, label}) => {
+const Tags = ({tags, icon, label}) => {
     return (
         <div className="flex flex-col gap-4">
             <Reveal>
@@ -16,3 +17,11 @@ export default ({tags, icon, label}) => {
         </div>
     )
 }
+
+Tags.propTypes = {
+    tags: PropTypes.array,
+    icon: PropTypes.node,
+    label: PropTypes.string
+}
+
+export default Tags

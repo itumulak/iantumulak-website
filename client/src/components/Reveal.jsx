@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
+import PropTypes from "prop-types";
 
-export default ({children, width = "fit-content"}) => {
+const Reveal = ({children, width = "fit-content"}) => {
     const ref = useRef(null)
     const isInView = useInView(ref, {once: true})
     const mainControls = useAnimation()
@@ -12,7 +13,7 @@ export default ({children, width = "fit-content"}) => {
             mainControls.start("visible")
             slideControls.start("visible") 
         }
-    }, [isInView])
+    }, [isInView, mainControls, slideControls])
 
     return (
         <div ref={ref} style={{position: "relative", overflow: "hidden", width: width}}>
@@ -48,3 +49,10 @@ export default ({children, width = "fit-content"}) => {
         </div>
     )
 }
+
+Reveal.propTypes = {
+    children: PropTypes.node,
+    width: PropTypes.string
+}
+
+export default Reveal

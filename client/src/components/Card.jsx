@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { IoLogoGithub } from "react-icons/io5";
 import { IoGlobe } from "react-icons/io5";
 import { IoIosPlayCircle } from "react-icons/io";
@@ -16,8 +17,7 @@ const Img = styled.img`
     margin: auto;
 `
 
-export default ({src, name, summary, links = [], stacks = []}) => {
-
+const Card  = ({src, name, summary, links = [], stacks = []}) => {
     return (
         <div className="flex flex-col flex-nowrap gap-4 max-w-[432px]">
             <div 
@@ -61,3 +61,13 @@ export default ({src, name, summary, links = [], stacks = []}) => {
         </div>
     )
 }
+
+Card.propTypes = {
+    src: PropTypes.string,
+    name: PropTypes.string.isRequired,
+    summary: PropTypes.string.isRequired,
+    links: PropTypes.array,
+    stacks: PropTypes.array
+}
+
+export default Card;

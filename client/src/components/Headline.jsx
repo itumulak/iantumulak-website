@@ -1,5 +1,6 @@
 import { styled, css } from "styled-components";
 import Reveal from "./Reveal";
+import PropTypes from "prop-types";
 
 const breakpoints = {
     sm: "640px",
@@ -62,7 +63,7 @@ const Line = styled.div`
     background-color: var(--text);
 `
 
-export default ({ isRight = false, text = "", sizes = {xs: "30px", md: "48px"}, weight= "black", gap = 8 }) => {
+const Headline = ({ isRight = false, text = "", sizes = {xs: "30px", md: "48px"}, weight= "black", gap = 8 }) => {
     return (
         <div className={`flex flex-flex-wrap items-center gap-${gap} w-full ${isRight ? "flex-row-reverse" : "flex-row"}`}>
             <ResponsiveText sizes={sizes} className={`font-${weight} whitespace-nowrap`}>
@@ -74,3 +75,13 @@ export default ({ isRight = false, text = "", sizes = {xs: "30px", md: "48px"}, 
         </div>
     )
 }
+
+Headline.propTypes = {
+    isRight: PropTypes.bool,
+    text: PropTypes.string,
+    sizes: PropTypes.object,
+    weight: PropTypes.string,
+    gap: PropTypes.number
+}
+
+export default Headline

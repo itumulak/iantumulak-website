@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 
 const Social = styled.a`
     & > svg {
@@ -9,7 +10,7 @@ const Social = styled.a`
     }
 `
 
-export default ({ data }) => {
+const Socials = ({ data }) => {
     return (
         <motion.div 
             className="flex flex-row items-center justify-center gap-6"
@@ -48,3 +49,9 @@ export default ({ data }) => {
         </motion.div>
     )
 }
+
+Socials.propTypes = {
+    data: PropTypes.array
+}
+
+export default Socials

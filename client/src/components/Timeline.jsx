@@ -7,7 +7,7 @@ import { experience } from "../constants";
 import Reveal from "./Reveal";
 import Pill from "./Pill";
 
-export default () => {
+const Timeline = () => {
     return (
         <VerticalTimeline layout="1-column-left">
             {experience.map((exp) => (
@@ -58,3 +58,5 @@ export default () => {
         </VerticalTimeline>
     )
 }
+
+export default Timeline

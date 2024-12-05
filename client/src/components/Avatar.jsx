@@ -1,8 +1,9 @@
+import PropTypes from 'prop-types';
 import { useEffect, useRef } from 'react';
 import Avatar from '@mui/material/Avatar';
 import { motion, useInView, useAnimation } from "framer-motion";
 
-export default ({src, name}) => {
+const AvatarComponent = ({src, name}) => {
     const ref = useRef(null)
     const isInView = useInView(ref, {once: true})
     const viewControl = useAnimation()
@@ -13,7 +14,7 @@ export default ({src, name}) => {
             console.log("avatar in view");
             
         }        
-    }, [isInView])
+    }, [isInView, viewControl])
 
     return (
         <div ref={ref}>
@@ -32,3 +33,10 @@ export default ({src, name}) => {
         </div>
     )
 }
+
+AvatarComponent.propTypes = {
+    src: PropTypes.string,
+    name: PropTypes.string
+}
+
+export default AvatarComponent
