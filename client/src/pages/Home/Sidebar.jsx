@@ -1,4 +1,3 @@
-import { styled } from "styled-components";
 import TerminalIcon from '@mui/icons-material/Terminal';
 import { IoCodeSlashSharp } from "react-icons/io5";
 import { SiBookstack } from "react-icons/si";
@@ -10,13 +9,7 @@ import SubHeadline from '../../components/SubHeadline';
 import Tags from '../../components/Tags';
 import { languageStack, libraryStack, databaseStack, cmsStack, toolStack } from "../../constants";
 
-
-const Wrapper = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-`
-
-export default () => {
+const Sidebar = () => {
     return (
         <div className="flex flex-col gap-y-4">
             <SubHeadline icon={<TerminalIcon />} text={`Tech Stack`}/>
@@ -30,3 +23,5 @@ export default () => {
         </div>
     )
 }
+
+export default Sidebar;

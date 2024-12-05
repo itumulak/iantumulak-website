@@ -4,7 +4,7 @@ import Avatar from "../../components/Avatar";
 import Reveal from "../../components/Reveal"
 import Section from "../../components/Section"
 
-export default () => {
+const HeroSection = () => {
     return (
         <Section>
             <div className="z-10 relative w-fit flex flex-col gap-y-6">
@@ -22,3 +22,5 @@ export default () => {
         </Section>
     )
 }
+
+export default HeroSection;

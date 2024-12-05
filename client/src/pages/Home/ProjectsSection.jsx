@@ -24,7 +24,7 @@ const Projects = styled.div`
     }
 `
 
-export default () => {
+const ProjectsSection = () => {
     return (
         <Section id="projects">
             <Headline text={`Passion Projects`} isRight={true} />
@@ -36,3 +36,5 @@ export default () => {
         </Section>
     )
 }
+
+export default ProjectsSection;

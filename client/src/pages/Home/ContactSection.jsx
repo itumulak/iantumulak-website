@@ -1,9 +1,10 @@
+import PropTypes from "prop-types";
 import { MdOutlineEmail } from "react-icons/md";
 
 import Section from "../../components/Section"
 import Reveal from "../../components/Reveal";
 
-export default ({email, linkedin}) => {
+const ContactSection = ({email, linkedin}) => {
     return (
         <Section id="contact">
             <h4 className="text-7xl font-black text-center">Contact<span className="text-brand">.</span></h4>
@@ -23,3 +24,10 @@ export default ({email, linkedin}) => {
         </Section>
     )
 }
+
+ContactSection.propTypes = {
+    email: PropTypes.string.isRequired,
+    linkedin: PropTypes.string.isRequired
+}
+
+export default ContactSection

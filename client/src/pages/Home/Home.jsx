@@ -4,7 +4,7 @@ import ExperienceSection from "./ExperienceSection"
 import HeroSection from "./HeroSection"
 import ProjectsSection from "./ProjectsSection"
 
-export default () => {
+const Home = () => {
     return (
         <>
             <HeroSection/>
@@ -15,3 +15,5 @@ export default () => {
         </>
     )
 }
+
+export default Home;

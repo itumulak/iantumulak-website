@@ -4,7 +4,7 @@ import Reveal from "../../components/Reveal";
 import Section from "../../components/Section"
 import Sidebar from "./Sidebar";
 
-export default () => {
+const AboutSection = () => {
     return (
         <Section id="about">
             <Headline text={`About me`}/>
@@ -25,3 +25,5 @@ export default () => {
         </Section>
     )
 }
+
+export default AboutSection
