@@ -1,5 +1,6 @@
+import { RouterProvider } from "react-router-dom"
 import LayoutHeader from "./components/LayoutHeader"
-import Home from "./pages/Home/Home"
+import { router } from "./router/router"
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
   return (
     <div className="w-full h-auto">
       <LayoutHeader/>
-      <Home/>
+      <RouterProvider router={router}/>
     </div>
   )
 }
