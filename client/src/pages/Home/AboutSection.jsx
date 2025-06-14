@@ -14,10 +14,10 @@ export default () => {
                         <p>I am a full stack developer from <strong>Davao City, Philippines</strong>.</p>
                     </Reveal>
                     <Reveal>
-                        <p><strong>I build enterprise WordPress applications.</strong> I have been actively been in the industry since 2010. Over my entire career, I have worked on a wide range of projects, from small-scale WordPress sites to large-scale enterprise projects. While I mainly worked on Wordpress my entire career, I never shy away from learning new technologies and explore the world of web development. I am actively learning and always seeking new opportunities.</p>
+                        <p>I have been actively been in the industry since 2010. Over my entire career, I have worked on a wide range of projects, from small-scale WordPress sites to <strong>large-scale enterprise projects</strong>. While I mainly worked on Wordpress my entire career, I never shy away from learning and adapting to new technologies.</p>
                     </Reveal>
                     <Reveal>
-                        <p>I am actively looking for new positions where I can help build awesome things and contribute my knowledge, and I am always open to new opportunities. If you think you've got an opening for me, feel free to reach out.</p>
+                        <p>I am actively looking for new positions where I can help <strong>build awesome things</strong> and contribute my knowledge, and I am always open to new opportunities. If you think you've got an opening for me, feel free to reach out.</p>
                     </Reveal>
                 </Container>
                 <Sidebar/>
