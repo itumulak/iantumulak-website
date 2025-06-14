@@ -399,8 +399,8 @@ export const experience  = [
         url: "https://www.tmtinsurance.com/",
         position: "Lead Developer",
         started: "Jan 2025",
-        ending: "Present",
-        description: "I lead a team of 4 developers and myself-- handling both internal and client facing projects. My key responsibilities includes: Leading multiple full-cycle development projects, provide mentoring and guidance to junior developers, conducting research, feasibility studies by defining project requirements and scopes, take a hands-on role as a Senior Full Stack Developer.",
+        ended: "Present",
+        description: "I lead a team of 4 developers. I handle both internal and client facing projects. My key responsibilities includes: Leading multiple full-cycle development projects, provide mentoring and guidance to junior developers, conducting research, feasibility studies by defining project requirements and scopes, take a hands-on role as a Senior Full Stack Developer.",
         logo: tmtInsurance,
         work: [
             {
