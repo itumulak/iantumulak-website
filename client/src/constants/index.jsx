@@ -390,7 +390,60 @@ export const projects = [
     },    
 ]
 
+import imagineWebImg from "../assets/imagineweb.jpg";
+import tmtInsurance from "../assets/tmtinsurance.png";
+
 export const experience  = [
+    {
+        company: "TMT Insurance",
+        url: "https://www.tmtinsurance.com/",
+        position: "Lead Developer",
+        started: "Jan 2025",
+        ending: "Present",
+        description: "I lead a team of 4 developers and myself-- handling both internal and client facing projects. My key responsibilities includes: Leading multiple full-cycle development projects, provide mentoring and guidance to junior developers, conducting research, feasibility studies by defining project requirements and scopes, take a hands-on role as a Senior Full Stack Developer.",
+        logo: tmtInsurance,
+        work: [
+            {
+                name: "TMT Insurance",
+                url: "https://www.tmtinsurance.com/"
+            },
+            {
+                name: "Avocado VA",
+                url: "https://www.avocadova.com/"
+            },
+            {
+                name: "Avocado Online Tutors",
+                url: "https://turors.avocadova.com/"
+            },
+            {
+                name: "Houston Medical Group",
+                url: "https://houstonmedicalgroup.org/"
+            }
+        ]
+    },
+    {
+        company: "Imagine Web",
+        url: "https://www.linkedin.com/company/imagine-web/",
+        position: "Senior Full Stack Engineer",
+        started: "Nov 2024",
+        ended: "Feb 2025",
+        description: "My responsibility is maintaining and enhancing their existing enterprise Booking CMS. I have worked on various payment gateways integration particularly with Stripe, Basys, Clearview, and Square.",
+        logo: imagineWebImg,
+        work: [
+            {
+                name: "RV Business Tech",
+                url: "https://rvbusinesstech.com/"
+            },
+            {
+                name: "Ridge Park RV Camp Ground",
+                url: "https://ridgeparkrvcampground.com/"
+            },
+            {
+                name: "Jamaica Beach RV Resors",
+                url: "https://jamaicabeachrvresort.com/"
+            }
+        ]
+    },
     {
         company: "Upwork",
         url: "https://www.upwork.com/freelancers/~015f9c0c1d82983486",

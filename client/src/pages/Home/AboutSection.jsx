@@ -11,10 +11,10 @@ export default () => {
             <div className="flex flex-col gap-y-6">
                 <Container>
                     <Reveal>
-                        <p>First off, welcome to my personal website! My name is <strong className="italic text-brand">Ian</strong> if you haven't catch it yet. I am a full stack developer from Davao City, Philippines.</p>
+                        <p>I am a full stack developer from <strong>Davao City, Philippines</strong>.</p>
                     </Reveal>
                     <Reveal>
-                        <p>WordPress development has been my stable career since 2010 but I started expanding outside of WordPress due to the lack of opportunities and further mass layoffs in 2024. I decided to explore other tech stacks and commited to further honing my craft in web development.</p>
+                        <p><strong>I build enterprise WordPress applications.</strong> I have been actively been in the industry since 2010. Over my entire career, I have worked on a wide range of projects, from small-scale WordPress sites to large-scale enterprise projects. While I mainly worked on Wordpress my entire career, I never shy away from learning new technologies and explore the world of web development. I am actively learning and always seeking new opportunities.</p>
                     </Reveal>
                     <Reveal>
                         <p>I am actively looking for new positions where I can help build awesome things and contribute my knowledge, and I am always open to new opportunities. If you think you've got an opening for me, feel free to reach out.</p>
