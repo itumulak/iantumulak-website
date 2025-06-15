@@ -450,7 +450,7 @@ export const experience  = [
         position: "WordPress Contractor",
         started: "Apr 2010",
         ended: "Jul 2024",
-        description: "I have taken odds jobs and long-term WordPress projects throughout the duration of my stay in the platform. The work spans from quick fixes, small-scale work, to the large-scale enterprise projects. I have built my whole career in UpWork. Sadly, I have to walk away from this platform since it is now overrun with bot applicants, fake job posts, and predatorial fees.",
+        description: "I have taken odds jobs and long-term WordPress projects throughout the duration of my stay in the platform. The work spans from quick fixes, small-scale work, to the large-scale enterprise projects. I have to walk away from this platform since it is now overrun with bot applicants, fake job posts, and predatorial fees.",
         logo: upworkImg,
         work: [
             {
